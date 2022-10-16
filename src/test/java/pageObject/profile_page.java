@@ -16,9 +16,19 @@ public class profile_page extends Config {
     }
 
     // locators
-
-
-
+    @FindBy(how= How.XPATH, using = "//*[@id='profile_form']/legend")
+    public WebElement welcomeProfileLoc;
+    @FindBy(how= How.NAME, using = "email")
+    public WebElement emailLocator;
 
     // functions
+    public void verifyEmailAddressIsCorrectInProfilePage(String expEmail) {
+        String actEmail = emailLocator.getAttribute("value");
+        Assert.assertEquals(actEmail, expEmail);
+    }
+    public void verifyWelcomeTitle(){
+        String exp = "Welcome to TalentTek";
+        String act = welcomeProfileLoc.getText();
+        Assert.assertEquals(act, exp);
+    }
 }
