@@ -1,6 +1,7 @@
 package pageObject;
 
 import base.Config;
+import base.GenericFunctions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class login_page extends Config {
+
+    GenericFunctions GF = new GenericFunctions();
 // constructor
     public login_page (WebDriver driver){
         PageFactory.initElements(driver, this);
@@ -42,6 +45,7 @@ public WebElement invalidEmailOrPassLoc;
         passwordLocator.sendKeys(pass);
     }
     public void clickLoginButton(){
+        GF.waitForElementToBeClickable_xpath (30, "//input[@value='Log In']");
         loginBtnLocator.click();
     }
     public void verifyInvalidEmailOrPassErrorMsg(){

@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-10-16T16:54:21.073Z",
+        "start_timestamp": "2022-10-16T17:18:01.939Z",
         "before": [
           {
             "result": {
-              "duration": 4194988000,
+              "duration": 4876009000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 112702000,
+              "duration": 111942000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 20445000,
+              "duration": 20079000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 160196000,
+              "duration": 146019000,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 74293000,
+              "duration": 72392000,
               "status": "passed"
             },
             "line": 7,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 53094000,
+              "duration": 126205000,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 403760000,
+              "duration": 379367000,
               "status": "passed"
             },
             "line": 9,
@@ -96,203 +96,7 @@
         ],
         "tags": [
           {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-10-16T16:54:26.111Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2456651000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.startTest()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "Login with invalid email and valid password",
-        "description": "",
-        "id": "login;login-with-invalid-email-and-valid-password",
-        "after": [
-          {
-            "result": {
-              "duration": 110277000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 5175000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "i am at TalentTEK Homepage",
-            "match": {
-              "location": "stepDef.login_stepDef.iAmAtTalentTEKHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 155356000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "i enter my invalid email address",
-            "match": {
-              "location": "stepDef.login_stepDef.iEnterMyInvalidEmailAddress()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 66305000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "i enter my valid password",
-            "match": {
-              "location": "stepDef.login_stepDef.iEnterMyValidPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 51256000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "i click on Login button",
-            "match": {
-              "location": "stepDef.login_stepDef.iClickOnLoginButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 158654000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "i should not be able to successfully login",
-            "match": {
-              "location": "stepDef.login_stepDef.iShouldNotBeAbleToSuccessfullyLogin()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-10-16T16:54:29.119Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2431014000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.startTest()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "Login with valid email and invalid password",
-        "description": "",
-        "id": "login;login-with-valid-email-and-invalid-password",
-        "after": [
-          {
-            "result": {
-              "duration": 109689000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 5303000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "i am at TalentTEK Homepage",
-            "match": {
-              "location": "stepDef.login_stepDef.iAmAtTalentTEKHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 170736000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "i enter my valid email address",
-            "match": {
-              "location": "stepDef.login_stepDef.iEnterMyValidEmailAddress()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 75106000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "i enter my invalid password",
-            "match": {
-              "location": "stepDef.login_stepDef.iEnterMyInvalidPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 77952000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "i click on Login button",
-            "match": {
-              "location": "stepDef.login_stepDef.iClickOnLoginButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 200594000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "i should not be able to successfully login",
-            "match": {
-              "location": "stepDef.login_stepDef.iShouldNotBeAbleToSuccessfullyLogin()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
+            "name": "@test"
           }
         ]
       }

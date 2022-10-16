@@ -1,6 +1,7 @@
 package stepDef;
 
 import base.Config;
+import base.GenericFunctions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,10 +11,12 @@ import pageObject.login_page;
 public class login_stepDef extends Config {
 
     login_page LP = new login_page(driver);
+    GenericFunctions GF = new GenericFunctions();
 
     @Given("i am at TalentTEK Homepage")
     public void iAmAtTalentTEKHomepage() {
         LP.verifyHomePageTitle();
+        GF.getCurrentDateAndTimeWithTimeStamp();
     }
     @And("i enter my valid email address")
     public void iEnterMyValidEmailAddress() {
