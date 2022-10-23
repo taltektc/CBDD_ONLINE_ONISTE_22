@@ -2,6 +2,7 @@ package pageObject;
 
 import base.Config;
 import base.GenericFunctions;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -54,6 +55,12 @@ public WebElement invalidEmailOrPassLoc;
        System.out.println("Act error message: ==> " + act);
        String exp = "You have entered an incorrect email or student Id";
        Assert.assertEquals(exp, act);
+    }
+    public void clickCreateNewAccountButton(String buttonValue){
+        driver.findElement(By.xpath("//a[contains(text(),'"+buttonValue+"')]")).click();
+    }
+    public void clickOnLoginButton(String buttonValue){
+        driver.findElement(By.xpath("//input[@value='"+buttonValue+"']")).click();
     }
 
 }

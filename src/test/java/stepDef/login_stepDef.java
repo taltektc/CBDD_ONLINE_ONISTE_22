@@ -45,4 +45,15 @@ public class login_stepDef extends Config {
     public void iEnterMyInvalidPassword() {
         LP.enterPass("myfakePas$1");
     }
+
+    @And("i click on {string} button from signup page")
+    public void iClickOnButton(String buttonText) {
+        LP.clickCreateNewAccountButton(buttonText);
+    }
+
+    @When("i click on {string} button from Sign in page")
+    public void iClickOnButtonFromSignInPage(String buttonText) {
+        LP.clickOnLoginButton(buttonText);
+
+    }
 }
